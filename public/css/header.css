@@ -1,12 +1,13 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 5;
+  padding: 5;
 }
 
 .nav {
   text-align: center;
+  text-decoration: none;
   color: black;
-  margin: 10px;
+  margin-right: 10px;
   background-color: white;
 }
 

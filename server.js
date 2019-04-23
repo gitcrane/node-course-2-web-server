@@ -45,14 +45,14 @@ hbs.registerHelper('screamIt', (text) => {
 app.get('/', (req, res) => {
 
   res.render('home.hbs', {
-    pageTitle: 'Home Page',
+    pageTitle: "Crane Bird's Home page",
     welcomeMessage: 'Welcome to my web site.',
   })
 });
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
-    pageTitle: 'About Page'
+    pageTitle: 'About Crane Bird'
   });
 });
 
