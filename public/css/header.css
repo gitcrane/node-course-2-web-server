@@ -6,11 +6,15 @@
 .nav {
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: white;
   margin-right: 10px;
-  background-color: white;
+  background-color: black;
+}
+
+.nav:hover {
+  font-weight: 900;
 }
 
 div {
-  background-color: white;
+  background-color: black;
 }

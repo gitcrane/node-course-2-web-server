@@ -1,6 +1,10 @@
 <head>
   <meta charset="utf-8">
-  <title>{{pageTitle}}</title>
+  {{#if welcomeMessage}}
+    <title>{{screamIt welcomeMessage}}</title>
+  {{else}}
+    <title>{{pageTitle}}</title>
+  {{/if}}
   <link rel="shortcut icon" href="/icons/favicon.png" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="/css/header.css">
 </head>
