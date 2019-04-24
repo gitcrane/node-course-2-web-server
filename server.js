@@ -14,6 +14,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 
 // calling set method to use handlebars ('hbs') as the view engine
 // http://handlebarsjs.com/
+
 app.set('view engine', 'hbs');
 
 app.use((req, res, next) => {
@@ -71,3 +72,4 @@ app.get('/bad', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
+
