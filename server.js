@@ -4,7 +4,7 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000; //For integration with Heroku
 
 // Initializing express server
 var app = express();
@@ -48,18 +48,21 @@ app.get('/', (req, res) => {
   res.render('home.hbs', {
     pageTitle: "Crane Bird's Home page",
     welcomeMessage: 'Welcome to my web site.',
-  })
+    ip: req.ip
+  });
 });
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
-    pageTitle: 'About Crane Bird'
+    pageTitle: 'About Crane Bird',
+    ip: req.ip
   });
 });
 
 app.get('/projects', (req, res) => {
   res.render('projects.hbs', {
-    pageTitle: 'Projects Page'
+    pageTitle: 'Projects Page',
+    ip: req.ip
   });
 });
 
