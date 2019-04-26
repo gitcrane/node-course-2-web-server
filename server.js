@@ -48,21 +48,21 @@ app.get('/', (req, res) => {
   res.render('home.hbs', {
     pageTitle: "Crane Bird's Home page",
     welcomeMessage: 'Welcome to my web site.',
-    ip: req.ip
+    ip: req.connection.remoteAddress
   });
 });
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About Crane Bird',
-    ip: req.ip
+    ip: req.connection.remoteAddress
   });
 });
 
 app.get('/projects', (req, res) => {
   res.render('projects.hbs', {
     pageTitle: 'Projects Page',
-    ip: req.ip
+    ip: req.connection.remoteAddress
   });
 });
 
